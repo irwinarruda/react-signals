@@ -1,0 +1,22 @@
+{
+  "name": "react-signals",
+  "version": "0.0.0",
+  "description": "A study to check if it is possible to use signals in react",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "keywords": [],
+  "author": "irwinarruda",
+  "license": "MIT",
+  "scripts": {
+    "example": "pnpm -C example",
+    "react-signals": "pnpm -C packages/react-signals",
+    "dev": "concurrently \"pnpm react-signals dev\" \"pnpm example dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "packageManager": "pnpm@7.26.1"
+}

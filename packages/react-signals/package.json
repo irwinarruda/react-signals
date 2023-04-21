@@ -1,0 +1,31 @@
+{
+  "name": "react-signals",
+  "version": "1.0.0",
+  "description": "A study to check if it is possible to use signals in react",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts --external react",
+    "build": "tsup src/index.ts --format cjs,esm --clean --dts --external react"
+  },
+  "keywords": [
+    "signals",
+    "signal",
+    "reactive",
+    "react"
+  ],
+  "author": "irwinarruda",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.53",
+    "@types/node": "^18.15.13",
+    "@types/react": "^18.0.37",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
