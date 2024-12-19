@@ -44,9 +44,12 @@ importers:
       '@swc/core': ^1.3.53
       '@types/node': ^18.15.13
       '@types/react': ^18.0.37
+      mobx-simple-store: ^1.5.1
       react: ^18.2.0
       tsup: ^6.7.0
       typescript: ^5.0.4
+    dependencies:
+      mobx-simple-store: 1.5.1
     devDependencies:
       '@swc/core': 1.3.53
       '@types/node': 18.15.13
@@ -1706,6 +1709,12 @@ packages:
     dependencies:
       brace-expansion: 1.1.11
     dev: true
+
+  /mobx-simple-store/1.5.1:
+    resolution: {integrity: sha512-dbNc12RLgjNx80Vla3b/E4AgAmL5aTATZXC+wvRz3BX38MmjtKs7pN//yXWf+52INR1Vk0XNkGzpgd40hSqmyg==}
+    peerDependencies:
+      mobx: '>=6'
+    dev: false
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
